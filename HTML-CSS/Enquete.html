@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleE.css">
+    <title>enquete</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\logo.png.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Organisation.html">Organisation</a></li>
+                    <li><a href="Prestataire.html">Prestataire</a></li>
+                    <li><a href="DescriptionSI.html">Description du SI</a></li>
+                    <li><a href="Enquete.html">Enquête</a></li>
+                </ul>
+            </nav>
+    </div>
+    <img class="croquette" src="images/croquette.png" >
+    <form action="#">
+        <label for="nom">Nom</label>
+        <input id="nom" placeholder="Prénom et nom" autofocus="" required=""><br>
+    
+        <label for="age">Âge</label>
+        <input id="age" type="number" placeholder="xx" pattern="[0-9]{2}" required=""><br>
+    
+        <label for="ville">Ville</label>
+        <select id="ville">
+            <option value="L" name="ville">Lille</option>
+            <option value="P" name="ville">Paris</option>
+            <option value="T" name="ville">Tours</option>
+            <option value="B" name="ville">Bordeaux</option>
+            <option value="T" name="ville">Toulouse</option>
+        </select> <br>
+    
+        <label>Genre</label>
+        <label for="genre-femme">
+            <input id="genre-femme" type="radio" name="genre" value="F"> Femme
+        </label>
+        <label for="genre-homme">
+            <input id="genre-homme" type="radio" name="genre" value="H"> Homme
+        </label><br>
+    
+        <label for="comments">Que recherchez-vous ?</label> <br>
+        <label for="informations-centrecall">
+            <input id="informations-centrecall" type="checkbox"> Des informations sur CentreCall
+        </label><br>
+        <label for="methodes-centrecall">
+            <input id="methodes-centrecall" type="checkbox"> Des informations sur les méthodes de travail de CentreCall
+        </label><br>
+        <label for="etudes-centrecall">
+            <input id="etudes-centrecall" type="checkbox"> Des informations sur les études de marché de CentreCall
+        </label><br>
+    
+        <label for="consultation">Vous avez consulté ce site en tant que</label>
+        <select id="consultation">
+            <option value="P" name="consultation">Particulier</option>
+            <option value="E" name="consultation">Entreprise</option>
+        </select><br>
+    </form>
+    <p><input class="machin" type="submit" value="Valider Enquête"></p>
+
+    </div>

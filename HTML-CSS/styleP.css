@@ -1,0 +1,238 @@
+:root {
+    --dark:#2f313a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Définition du comportement de défilement en douceur pour la page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles de base pour le corps de la page */
+body {
+    background: linear-gradient(90deg, #131417, var(--dark) 35% 65%, #131417); /* Arrière-plan avec un dégradé linéaire */
+	font-size: 1em;
+    color: #fff; /* Texte blanc */
+    
+}
+
+/* Styles pour l'en-tête de la page */
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Conteneur pour le contenu de la page */
+.container {
+    padding: 10px 10%;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style du logo */
+.logo {
+    width: 300px;
+}
+
+/* Styles pour les éléments de la barre de navigation */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+/* Styles pour le trait sous les liens au survol */
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #e45603;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/* Styles au survol des liens pour afficher le trait */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+body {
+	background: #262a2b;
+}
+/* Définit les styles de base pour la liste .tuile */
+.tuile {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+}
+
+/* Styles pour les éléments <li> à l'intérieur de .tuile */
+.tuile li {
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: left;
+}
+
+/* Styles pour les titres <h2> à l'intérieur de .tuile li */
+.tuile li h2 {
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Styles pour les sous-titres <h3> à l'intérieur de .tuile li */
+.tuile li h3 {
+	font-size: 20px;
+	color: #b7b7b7;
+	margin-bottom: 5px;
+}
+
+/* Styles pour les paragraphes <p> à l'intérieur de .tuile li */
+.tuile li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+}
+
+/* Styles pour les boutons <button> à l'intérieur de .tuile li */
+.tuile li button {
+	background: transparent;
+	border: 1px solid #b7b7b7;
+	padding: 10px 20px;
+	color: #b7b7b7;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-40px);
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+/* Styles pour le pseudo-élément :before des boutons */
+.tuile li button:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 120%;
+	background: #b7b7b7;
+	top: 0;
+	opacity: 0;
+	left: -140px;
+	border-radius: 0 20px 20px 0;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Styles pour les boutons lorsque survolés */
+.tuile li:hover button {
+	transform: translateY(5px);
+	opacity: 1;
+}
+
+/* Styles pour les boutons lorsqu'ils sont survolés */
+.tuile li button:hover {
+	color: #262a2b;
+}
+
+/* Styles pour le pseudo-élément :before des boutons lorsque survolés */
+.tuile li button:hover:before {
+	left: 0;
+	opacity: 1;
+}
+
+/* Styles pour le titre <h2> lorsque survolé */
+.tuile li:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+/* Styles pour les bordures de l'élément <li> */
+.tuile li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+
+/* Styles pour l'arrière-plan de l'élément <li> lorsqu'il est survolé */
+.tuile li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+/* Styles spécifiques pour le premier élément <li> */
+.tuile li:nth-child(1):before {
+	background: #e45603;
+}
+
+/* Styles spécifiques pour le deuxième élément <li> */
+.tuile li:nth-child(2):before {
+	background: #e45603;
+}
+
+/* Styles spécifiques pour le troisième élément <li> */
+.tuile li:nth-child(3):before {
+	background: #e45603;
+}
+
+/* Styles spécifiques pour le quatrième élément <li> */
+.tuile li:nth-child(4):before {
+	background: #e45603;
+}
+
+.schema {
+    width : 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

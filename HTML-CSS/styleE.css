@@ -1,0 +1,146 @@
+:root {
+    --dark:#2f313a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Définition du comportement de défilement en douceur pour la page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles de base pour le corps de la page */
+body {
+    background: linear-gradient(90deg, #131417, var(--dark) 35% 65%, #131417); /* Arrière-plan avec un dégradé linéaire */
+	font-size: 1em;
+    color: #fff; /* Texte blanc */
+    
+}
+
+/* Styles pour l'en-tête de la page */
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Conteneur pour le contenu de la page */
+.container {
+    padding: 10px 10%;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style du logo */
+.logo {
+    width: 300px;
+}
+
+/* Styles pour les éléments de la barre de navigation */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+/* Styles pour le trait sous les liens au survol */
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #e45603; 
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/* Styles au survol des liens pour afficher le trait */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+form {
+    text-align: center
+    margin;
+}
+
+
+/* Style général du formulaire */
+form {
+    max-width: 400px; 
+    margin: 0 auto;   
+    padding: 20px;   
+}
+
+/* Style des étiquettes */
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+/* Style des champs de texte et des sélecteurs */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; 
+    padding: 5px; 
+    margin-bottom: 10px;
+}
+
+/* Style des cases à cocher */
+input[type="checkbox"] {
+    margin-left: 5px; 
+}
+
+
+input[type="submit"] {
+    width: auto; 
+    margin-top: 10px; 
+}
+
+input[type="radio"] {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.machin {
+    display: block;
+    background-color: #e45603;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 50%;
+    
+}
+
+/* CSS pour la bannière */
+.croquette{
+    position: relative; /* Position relative pour permettre le positionnement de l'image */
+    overflow: hidden; /* Masquer tout contenu qui dépasse de la bannière */
+    width: 650px; /* Largeur de la bannière */
+    height: 80%; /* Hauteur de la bannière (ajustez selon vos besoins) */
+    float: left; /* Faire flotter la bannière à gauche */
+    background-image: url('images/croquette.png');
+    background-size: cover; 
+}
+
+
+
